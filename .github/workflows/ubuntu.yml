@@ -35,5 +35,12 @@ jobs:
 
       - name: Show Ngrok Tunnel URL
         run: |
-          sleep 10 # Wait for Ngrok to start the tunnel (adjust time as needed)
+          sleep 12 # Wait for Ngrok to start the tunnel (adjust time as needed)
           cat ngrok_output.txt
+
+      - name: Run Loop
+        run: |
+          while true; do
+            sleep 1 # Sleep for 6 hours
+             cat ngrok_output.txt 
+          done

@@ -1,4 +1,4 @@
-name: simplehacker
+name: ubuntu
 
 on: workflow_dispatch
 

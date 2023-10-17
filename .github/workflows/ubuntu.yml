@@ -1,4 +1,4 @@
-name: simple
+name: ubuntu
 
 on: workflow_dispatch
 

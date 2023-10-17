@@ -1,10 +1,9 @@
-name: ubuntu
+name: simplehacker
 
 on: workflow_dispatch
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
     timeout-minutes: 9999
 

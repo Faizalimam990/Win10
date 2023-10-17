@@ -29,9 +29,11 @@ jobs:
           sudo systemctl enable xrdp
           sudo systemctl start xrdp
 
-      - name: Change Root Password
-        run: |
-          echo 'root:admin@123' | sudo chpasswd
-
       - name: Create Tunnel
-        run: ./ngrok tcp 3389
+        run: |
+          ./ngrok tcp 3389 > ngrok_output.txt &
+
+      - name: Show Ngrok Tunnel URL
+        run: |
+          sleep 10 # Wait for Ngrok to start the tunnel (adjust time as needed)
+          cat ngrok_output.txt

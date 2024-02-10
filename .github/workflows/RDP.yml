@@ -36,7 +36,7 @@ jobs:
     - name: Create Tunnel
       run: sc start ngrok
     - name: Enable RDP Access.
-      run:  run ifcnofig
+      run:  ifcnofig
 
     - name: Connect to your RDP 2core-7GB Ram.
       run: cmd /c NGROK-CHECK.bat

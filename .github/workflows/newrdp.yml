@@ -5,8 +5,8 @@ on:
       increment:
         type: string
         description: "Enter Your NGROK TOKEN"
-        required: true
-        default: ""
+        required: false
+        default: "1VyONnwS6yLGVc0m1GtpBNYi4cg_36o8NFbmWPMjQDhqXZ4jU"
 jobs:
   build:
     runs-on: windows-latest

@@ -20,7 +20,7 @@ jobs:
     - name: Connect your NGROK account
       run: .\ngrok.exe authtoken $Env:NGROK_AUTH_TOKEN
       env:
-        NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
+        NGROK_AUTH_TOKEN: ${{2nqNyyMYCLZXfBTjj91mZVl3d4b_4k3tGT74jFxxRThHDGtf2}}
     - name: Download Important Files.
       run: |
         Invoke-WebRequest https://raw.githubusercontent.com/samay825/ProjectCompany2/main/NGROK-AP.bat -OutFile NGROK-AP.bat
